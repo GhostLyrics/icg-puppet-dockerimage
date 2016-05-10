@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     postfix \
     puppet \
     ruby-dev \
+    rsync \
     shorewall \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
