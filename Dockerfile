@@ -17,7 +17,7 @@ RUN echo "deb http://packages.elastic.co/logstash/2.3/debian stable main" >> "/e
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
+RUN gem install --no-rdoc --no-ri puppet-lint
+
 # newer rails-erb-lint requires higher Ruby version
-RUN gem install --no-rdoc --no-ri \
-    puppet-lint \
-    rails-erb-lint -v 1.1.6
+RUN gem install --no-rdoc --no-ri rails-erb-lint -v 1.1.6
