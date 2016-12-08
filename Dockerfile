@@ -17,6 +17,7 @@ RUN add-apt-repository "deb http://packages.elastic.co/logstash/2.3/debian stabl
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
+# newer rails-erb-lint requires higher Ruby version
 RUN gem install --no-rdoc --no-ri \
     puppet-lint \
-    rails-erb-lint
+    rails-erb-lint -v 1.1.6
