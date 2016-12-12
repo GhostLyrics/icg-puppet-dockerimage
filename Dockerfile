@@ -11,8 +11,6 @@ RUN echo "deb http://packages.elastic.co/logstash/2.3/debian stable main" >> "/e
     openjdk-7-jre-headless \
     postfix \
     puppet \
-    ruby2.2 \
-    ruby2.2-dev \
     rsync \
     shorewall \
  && apt-get clean \
