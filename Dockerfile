@@ -16,6 +16,8 @@ RUN echo "deb http://packages.elastic.co/logstash/2.3/debian stable main" >> "/e
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
+RUN gem install --no-rdoc --no-ri puppet_forge -v 2.2.6
+
 RUN gem install --no-rdoc --no-ri \
     puppet-lint \
     rails-erb-check \
